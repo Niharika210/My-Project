@@ -9,7 +9,7 @@ export function Delete(){
     async function deleteData(e){
         e.preventDefault();
         try{
-            const response = await axios.delete(`http://localhost:3002/api/employees/${id}`);
+            const response = await axios.delete(`https://my-project-m8st.onrender.com/api/employees/${id}`);
             alert(response.data.message);
         }
         catch(err){
