@@ -1,0 +1,130 @@
+/* Theme variables */
+:root {
+  --color-bg: #f5f6fa;
+  --color-foreground: #ffffff;
+  --color-primary: #4a90e2;
+  --color-accent: #50e3c2;
+  --color-text: #333333;
+  --color-text-light: #666666;
+
+  --font-family: 'Segoe UI', Tahoma, sans-serif;
+
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+}
+
+/* Base resets */
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: var(--font-family);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+/* Layout containers */
+.home {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background: var(--color-foreground);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: var(--space-md);
+  text-align: center;
+}
+
+header h2 {
+  margin: 0;
+  color: var(--color-primary);
+}
+
+/* Navigation */
+nav {
+  margin-top: var(--space-sm);
+  display: flex;
+  justify-content: center;
+  gap: var(--space-md);
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--color-text-light);
+  padding: var(--space-sm) var(--space-md);
+  border-radius: 4px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.nav-link.active,
+.nav-link:hover {
+  background-color: var(--color-primary);
+  color: #ffffff;
+}
+
+/* Main content area */
+main {
+  flex: 1;
+  padding: var(--space-lg);
+  background: var(--color-bg);
+}
+
+/* Footer */
+footer {
+  background: var(--color-foreground);
+  padding: var(--space-md);
+  text-align: center;
+  color: var(--color-text-light);
+  font-size: 0.9rem;
+  border-top: 1px solid #e0e0e0;
+}
+
+/* Default forms, buttons, inputs */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 1rem;
+  padding: var(--space-sm) var(--space-md);
+  margin: var(--space-sm) 0;
+}
+
+button {
+  background: var(--color-accent);
+  border: none;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* Tables and lists */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: var(--space-lg) 0;
+}
+
+th, td {
+  border: 1px solid #e0e0e0;
+  padding: var(--space-sm);
+}
+
+thead {
+  background: var(--color-primary);
+  color: white;
+}
+
+/* Utility classes */
+.text-center { text-align: center; }
+
+.mt-md { margin-top: var(--space-md); }
+.mb-md { margin-bottom: var(--space-md); }

@@ -1,0 +1,54 @@
+/* app.css */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background:bisque;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.Add {
+  background-color: tan;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 350px;
+  margin: auto;
+  
+}
+
+.Add h1 {
+  margin-bottom: 30px;
+  color: #343a40;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="userid"],
+form input[type="salary"] {
+  width: 90%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+form input[type="submit"] {
+  background-color: #f0286e;
+  color: #424445;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+form input[type="submit"]:hover {
+  background-color: #0df08a;
+}

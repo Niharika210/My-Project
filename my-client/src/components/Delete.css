@@ -1,0 +1,84 @@
+:root {
+  --primary-color: #007bff;
+  --primary-hover: #0056b3;
+  --primary-active: #3399ff;
+  --error-color: #dc3545;
+  --border-color: #ccc;
+  --focus-border: #007bff;
+  --input-bg: #fff;
+  --font-size: 1rem;
+  --gap: 1rem;
+}
+
+/* Container and form layout */
+.delete-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.delete-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+  background: lightsalmon;
+  padding: 2rem;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  font-size: var(--font-size);
+}
+
+/* Title and separator */
+.delete-form h1 {
+  margin: 0;
+}
+.delete-form hr {
+  border: none;
+  border-top: 1px solid var(--border-color);
+  margin-bottom: var(--gap);
+}
+
+/* Input styling */
+.delete-form input[type="text"] {
+  padding: 0.75rem;
+  font-size: var(--font-size);
+  background-color: var(--input-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.delete-form input:hover,
+.delete-form input:focus {
+  border-color: var(--focus-border);
+  box-shadow: 0 0 4px rgba(0,123,255,0.4);
+  outline: none;
+}
+
+.delete-form input:invalid {
+  border-color: var(--error-color);
+}
+
+/* Button styling */
+.delete-form button {
+  padding: 0.75rem;
+  font-size: var(--font-size);
+  background-color: var(--primary-color);
+  color: white;
+  border: 1px solid var(--primary-color);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.1s;
+}
+
+.delete-form button:hover {
+  background-color: var(--primary-hover);
+}
+
+.delete-form button:active {
+  background-color: var(--primary-active);
+  transform: scale(0.98);
+}
