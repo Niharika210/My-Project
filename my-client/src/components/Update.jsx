@@ -12,7 +12,7 @@ const[empSal,setSal] = useState("");
 async function updateHandler(e){
     e.preventDefault();
     try{
-        const response = await axios.put(`http://localhost:3002/api/employees/${id}`,
+        const response = await axios.put(`https://my-project-m8st.onrender.com/api/employees/${id}`,
             {empNo:Number(empNo),
             empName,
             empSal:Number(empSal)
