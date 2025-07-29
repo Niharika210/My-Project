@@ -7,7 +7,7 @@ function Findall(){
     async function FindallHandler(e) {
         e.preventDefault();
         try{
-            const response = await axios.get("http://localhost:3002/api/employees");
+            const response = await axios.get("https://my-project-m8st.onrender.com/api/employees");
             setEmployees(response.data);
         }
         catch (err){
